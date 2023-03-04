@@ -1,0 +1,291 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: url(Imagenes/bg.jpg);
+    padding: 20px 0;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    transition: 0.5s color;
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    margin-left: 5.5%;
+}
+
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 26%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    transition: 0.3s border-color;
+}
+
+.productos li:hover {
+    border-color: orange;
+}
+
+.productos li:active {
+    border-color: orange;
+    border-width: 5px;
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2 {
+    font-size: 35px;
+}
+
+.productos li:active h2 {
+    color: orange;
+}
+
+.descripcion {
+    font-size: 18px;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.imagen {
+    width: 40%;
+    padding: 6%;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+footer {
+    text-align: center;
+    background: url(Imagenes/bg.jpg);
+    padding: 5% 0;
+}
+
+.copyright {
+    color: white;
+    margin: 20px;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviarboton {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s background;
+    cursor: pointer;
+}
+
+.enviarboton:hover {
+    background: darkorange;
+}
+
+table {
+    margin: 40px 40px;
+}
+
+thead{
+    background: orange;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 2.5px solid orange;
+    text-align: center;
+    padding: 8px 15px;
+}
+
+.maincontacto {
+    padding-left: 15%;
+}
+
+/*CSS para Home*/
+
+.banner {
+    width: 100%;
+}
+
+.principalh {
+    background: white;
+    padding: 3em;
+}
+
+.tituloh {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em 0 1em;
+    clear: left;
+}
+
+.principalh p {
+    margin: 0 0 1em;
+    font-size: 1.5em;
+}
+
+.principalh strong {
+    font-weight: bold;
+}
+
+.principalh em {
+    font-style: italic;
+}
+
+.copa {
+    width: 250px;
+    float: left;
+    margin: 0 20px 20px 0;
+    transition: 400ms;
+}
+
+.copa:hover {
+    opacity: 0.5;
+    box-shadow: -10px 10px black;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(white, #001233);
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapacontenido {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.itemsb {
+    padding: 3em;
+    background: linear-gradient(#001233, darkred);
+    width: auto;
+    margin: 0 auto;
+    color: white;
+}
+
+.contenidotabla {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.listatabla {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.imagentabla {
+    width: 60%;
+}
+
+.items {
+    line-height: 1.5;
+}
+
+.items:nth-child(1) {
+    font-weight: bold;
+}
+
+.video {
+    width: 560px;
+    margin: 3em auto;
+    transition: 400ms;
+}
+
+.video:hover {
+    box-shadow: -10px 10px black;
+}
+
+@media screen and (max-width:1000px) {
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+    }
+
+    .caja, .principalh, .mapacontenido, .contenidotabla, .video {
+        width: auto;
+    }
+
+    .listatabla, .imagentabla, .copa {
+        width: 100%;
+    }
+
+    .productos h2 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+}

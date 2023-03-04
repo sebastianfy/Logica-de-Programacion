@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<h1>Promedio edades</h1>
+
+<br>
+
+<script>
+
+    function saltar() {
+
+        document.write("<br>")
+        document.write("<br>")
+
+    }
+
+    function escribir(frase) {
+
+        document.write(frase)
+        saltar()
+    }
+
+    var miembros = parseInt(prompt("Ingrese la cantidad de miembros de su familia"))
+    var contador = 1;
+    var total = 0;
+
+    while (contador <= miembros) {
+
+        edad = parseInt(prompt("Ingre la edad del familiar"))
+        total = total + edad
+        contador++
+
+    }
+
+    promedio = total / miembros
+
+    escribir("El promedio de las edades de la familia es " + promedio)
+
+</script>

@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+
+<h1>Mundial</h1>
+
+<br>
+
+<script>
+	
+	function saltar() {
+
+		document.write("<br>")
+		document.write("<br>")
+
+	}
+
+	function escribir(frase) {
+
+		document.write(frase)
+		saltar()
+	}
+
+	var anho = parseInt(prompt("Indique el año actual"))
+
+	var mundial = 1930
+
+	while (mundial <= anho) {
+
+		escribir("Hubo mundial de la FIFA en el año " + mundial)
+		mundial = mundial + 4;
+
+	}
+
+</script>

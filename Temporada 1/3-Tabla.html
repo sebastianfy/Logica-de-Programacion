@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<h1>Tabla de multiplicar Mejorada</h1>
+
+<br>
+
+<script>
+
+    function saltar() {
+
+        document.write("<br>")
+        document.write("<br>")
+
+    }
+
+    function escribir(frase) {
+
+        document.write(frase)
+        saltar()
+    }
+
+    var tabla = parseInt(prompt("Uste quiere saber la tabla del..."))
+
+    var limite = parseInt(prompt("Hasta el..."))
+
+    var multiplicador = 1
+
+    while (multiplicador <= limite) {
+
+        document.write(tabla + " por " + multiplicador + " es " + tabla * multiplicador + "<br>");
+        multiplicador = multiplicador++
+
+    }
+
+</script>

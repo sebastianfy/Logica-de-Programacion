@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+
+<h1>Juego</h1>
+
+<br>
+
+<script>
+	
+	function saltar() {
+
+		document.write("<br>")
+		document.write("<br>")
+
+	}
+
+	function escribir(frase) {
+
+		document.write(frase)
+		saltar()
+	}
+
+	for(var lineas = 1; lineas <= 3; lineas++) {
+
+		for (var columnas = 1; columnas <= 10; columnas++) {
+
+			document.write("*");
+
+		}
+
+		saltar()
+
+	}
+
+	escribir("Fin el delfin")
+
+</script>

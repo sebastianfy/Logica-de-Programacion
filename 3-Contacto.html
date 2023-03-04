@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contacto - FC Barcelona</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="Venta.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="Imagenes/Barca.png" class="imagen"></h1>
+                <nav>
+                    <ul>
+                        <li><a href=1-Pagina_web.html>Home</a></li>
+                        <li><a href=2-Venta_web.html>Productos</a></li>
+                        <li><a href=3-Contacto.html>Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="maincontacto">
+            <form>
+                <label for="nombre">Nombre y apellido</label>
+                <input type="text" id="nombre" class="padron" required>
+
+                <label for="correo">Correo electronico</label>
+                <input type="email" id="correo" class="padron" required placeholder="email@dominio.com">
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="padron" required placeholder="(+XX) XXXX XXXX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="68" rows="10" id="mensaje" class="padron"></textarea>
+
+                <fieldset>
+                    <legend>¿Como le gustaria que le contactemos?</legend>
+
+                    <label for="EmailR"><input type="radio" name="info" value="Email" id="EmailR" checked>Email</label>
+                    
+                    <label for="TelefonoR"><input type="radio" name="info" value="Telefono" id="TelefonoR">Telefono</label>
+                    
+                    <label for="WhatssapR"><input type="radio" name="info" value="Whatssap" id="WhatssapR">Whatssap</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿En que horario desea ser atendido?</legend>
+                    <select>
+                        <option>Ahora</option>
+                        <option>Cuando el Barca clasifique a octavos</option>
+                    </select>
+                </fieldset>
+                
+                <label class="checkbox"><input type="checkbox">¿¿Le gustaria recibir novedades del Barca??</label>
+                
+                <input type="submit" value="Enviar formulario" class="enviarboton">
+
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Horario</td>
+                        <td>Disponible</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Ahora</td>
+                        <td>6:00am - 5:00am</td>
+                    </tr>
+                    <tr>
+                        <td>Cuando el Barca clasifique a octavos</td>
+                        <td>si</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <img src="Imagenes/Barca.png" style="width: 20%;">
+            <p class="copyright">© Copyright FC Barcelona 2023</p>
+        </footer>
+    </body>
+
+</html>

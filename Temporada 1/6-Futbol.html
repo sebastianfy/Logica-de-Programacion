@@ -1,0 +1,61 @@
+<meta charset="utf-8">
+
+<h1>Programa para Fubol</h1>
+
+<br>
+
+<script>
+	
+	function saltar() {
+
+		document.write("<br>")
+		document.write("<br>")
+
+	}
+
+	function escribir(frase) {
+
+		document.write(frase)
+		saltar()
+	}
+
+	var equipo = prompt("Como se llama su equipo?");
+
+	if (equipo == "FC Barcelona") {
+
+	var equipo = "Xavineta"
+
+}
+
+	var victorias = parseInt(prompt("Cuantas victorias tuvo el " + equipo + " ?"));
+	var empates = parseInt(prompt("Cuantos empates tuvo el " + equipo + " ?"));
+
+	puntos = (victorias * 3) + empates
+
+	escribir("El total de puntos del " + equipo + " son " + puntos)
+
+	if (puntos > 30) {
+
+	escribir("El " + equipo + " esta mejor que el año pasado!")
+
+}
+
+	if (puntos == 30) {
+
+	escribir("El " + equipo + " esta igual que el año pasado :/")
+
+}
+
+	if (puntos < 30) {
+
+	escribir("El " + equipo + " es una cagada, cambiate de equipo")
+
+}
+
+	if (equipo == "Alianza Lima") {
+
+	escribir("BRO WTF, como le vas a hinchar al Alianza risa")
+
+}
+
+</script>
